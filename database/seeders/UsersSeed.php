@@ -4,7 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-class ProjectSeeder extends Seeder
+
+class UsersSeed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +14,6 @@ class ProjectSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('project')->insert(['title'=>'e-store']);
+        DB::table('users')->insert(['Name' => 'test123', 'Wallet' => '$64.78']);
     }
 }

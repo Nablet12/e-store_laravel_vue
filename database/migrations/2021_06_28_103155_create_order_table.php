@@ -17,7 +17,7 @@ class CreateOrderTable extends Migration
             $table->id();
             $table->integer('User ID');
             $table->integer('Product ID');
-            $table->boolean('State');
+            //$table->boolean('State');
             $table->integer('Total');
             $table->integer('Quantity');
         });
