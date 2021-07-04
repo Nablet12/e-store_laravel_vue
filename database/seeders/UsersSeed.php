@@ -14,6 +14,6 @@ class UsersSeed extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert(['Name' => 'test123', 'Wallet' => '$64.78']);
+        DB::table('users')->insert(['Name' => 'test123', 'Wallet' => '64.78']);
     }
 }

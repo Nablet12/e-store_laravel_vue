@@ -1,18 +1,18 @@
-<form action="/order/ {{ $order -> id }}" method ="POST">
+<form action = "/Order/ {{ $order -> id }}" method = "POST">
 @csrf
 @method ('PUT')
 <div>
-    <label for="User ID"> User ID </label>
-    <input type="text" value = "{{ $order -> User ID }}" name = "User ID">
+    <label for = "user_id"> User ID </label>
+    <input type="text" value = "{{ $order -> user_id }}" name = "User ID">
 
-    <label for="Product ID"> Product ID </label>
-    <input type="text" value = "{{ $order -> Product ID }}" name = "Product ID">
+    <label for = "product_id"> Product ID </label>
+    <input type="text" value = "{{ $order -> product_id }}" name = "Product ID">
 
-    <label for="Total"> Total </label>
-    <input type="text" value = "{{ $order -> Total }}" name = "Total">
+    <label for = "total"> Total </label>
+    <input type="text" value = "{{ $order -> total }}" name = "Total">
 
-    <label for="Quantity"> Quantity </label>
-    <input type="text" value = "{{ $order -> Quantity }}" name = "Quantity">
+    <label for = "quantity"> Quantity </label>
+    <input type="text" value = "{{ $order -> quantity }}" name = "Quantity">
 </div>
 <button type = "submit"> Save </button>
 </form>

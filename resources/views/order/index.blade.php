@@ -1,4 +1,4 @@
-<a href = "/order/create"> New Order </a>
+<a href = "/Order/create"> New Order </a>
 <table>
     <thead>
         <tr>
@@ -26,20 +26,20 @@
                     {{ $order -> id }}
                 </td>
                 <td>
-                    {{ $order -> User ID }}
+                    {{ $order -> user_id }}
                 </td>
                 <td>
-                    {{ $order -> Product ID }}
+                    {{ $order -> product_id }}
                 </td>
                 <td>
-                    {{ $order -> Total }}
+                    {{ $order -> total }}
                 </td>
                 <td>
-                    {{ $order -> Quantity }}
+                    {{ $order -> quantity }}
                 </td>
                 <td>
-                    <a href = "/order/ {{ $order -> id }}"> Show </a>
-                    <a href = "/order/ {{ $order -> id }}/edit"> Edit </a>
+                    <a href = "/Order/ {{ $order -> id }}"> Show </a>
+                    <a href = "/Order/ {{ $order -> id }} /edit"> Edit </a>
                     @csrf
                     @method('DELETE')
                     <button type = "submit"> Delete </button>
